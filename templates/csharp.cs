@@ -1,12 +1,16 @@
 using System;
 
-namespace MyApp
+namespace MyApp;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, world!");
-        }
+        Program program = new Program();
+        program.Run();
+    }
+
+    public void Run() {
+
     }
 }
