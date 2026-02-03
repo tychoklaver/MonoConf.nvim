@@ -29,7 +29,7 @@ return {
         mason_lspconfig.setup({
             -- list of servers for mason to install
             ensure_installed = {
-                "lua_ls", "clangd", "csharp_ls", --[["tsserver",]]
+                "lua_ls", "clangd", "omnisharp", --[["tsserver",]]
                 "rust_analyzer", "elixirls", "pyright",
             },
         })
@@ -92,8 +92,8 @@ return {
                     filetype = { "c", "cpp" },
                 })
             end,
-            ["csharp_ls"] = function()
-                lspconfig["csharp_ls"].setup({
+            ["omnisharp"] = function()
+                lspconfig["omnisharp"].setup({
                     capabilities = capabilities,
                 })
             end,
