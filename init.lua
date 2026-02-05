@@ -1,3 +1,3 @@
 require("mono.core")
 require("mono.lazy")
-require("boilerplate") 
+require("boilerplate")
